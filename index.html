@@ -109,6 +109,12 @@
 
         <script>window.onload = GameMaker_Init;</script>
 
+        <script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.register('service-worker.js')
+                .then(() => console.log('Service Worker Registered!'));
+            }
+        </script>
         <!-- Builtin injector for injecting google analytics code -->
         
 
